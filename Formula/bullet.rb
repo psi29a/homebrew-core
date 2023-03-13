@@ -35,7 +35,7 @@ class Bullet < Formula
       -DCMAKE_INSTALL_RPATH=#{opt_lib}/bullet/double
       -DUSE_DOUBLE_PRECISION=ON
       -DBUILD_SHARED_LIBS=ON
-      -BULLET2_MULTITHREADING=ON
+      -DBULLET2_MULTITHREADING=ON
     ]
 
     mkdir "builddbl" do
