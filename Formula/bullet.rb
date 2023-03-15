@@ -29,13 +29,13 @@ class Bullet < Formula
       -DBT_USE_EGL=ON
       -DBUILD_UNIT_TESTS=OFF
       -DINSTALL_EXTRA_LIBS=ON
+      -DBULLET2_MULTITHREADING=ON
     ]
 
     double_args = std_cmake_args + %W[
       -DCMAKE_INSTALL_RPATH=#{opt_lib}/bullet/double
       -DUSE_DOUBLE_PRECISION=ON
       -DBUILD_SHARED_LIBS=ON
-      -DBULLET2_MULTITHREADING=ON
     ]
 
     mkdir "builddbl" do
